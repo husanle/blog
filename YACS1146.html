@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>题目总结 YACS1146</title>
+            <center><h1><a href="https://www.iai.sh.cn/problem/1146">YACS1146 水面之下</a></h1></center>
+            <p> 题意：看动画片，有一些谜团，当现有的谜团全部被解决，总共天数就增加了1天。 </p>
+            <p> 输入：输入一行一个整数 n，表示动画有多少集。接下来一行n个整数 a1,a2,...,an，表示第i集的谜团在ai集解释。 </p>
+            <p> 输出：输出一个整数，表示总共多少天。 </p>
+            <p> 思路：注意a的长度<=100000,可以用一个变量max_a储存最后一个谜团，当看到max_a集时，天数+1。 </p>
+            <p> 代码： </p>
+            <pre>
+#include&#60bits/stdc++.h&#62
+using namespace std;
+int main()
+{
+    int n;
+    cin&#62&#62n;
+    vector&#60int&#62 a(n+1);
+    int max_a=0,cnt=0;
+    for(int i=1;i&#60=n;i++)
+    {
+        cin&#62&#62a[i];
+    }
+    for(int i=1;i&#60=n;i++)
+    {
+        max_a=max(max_a,a[i]);
+        if(i==max_a)
+        {
+            cnt++;
+        }
+    }
+    cout&#60&#60cnt;
+    return 0;
+}
+            </pre>
+        </head>
+    </html>

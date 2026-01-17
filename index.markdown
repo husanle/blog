@@ -2,10 +2,10 @@
 layout: default
 ---
 
-### Blog  
+# Blog  
 
 >1. [Get Minecraft For Free](get-minecraft-for-free)
->2. [YACS1146题解](YACS1146.html)
+>2. [YACS1146题解](YACS1146-answer)
 >3. [托尔金阅读笔记](tolkien_reading.html)
 
 

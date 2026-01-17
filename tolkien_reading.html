@@ -1,0 +1,183 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暑假阅读：托尔金的中土世界</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Garamond:wght@400;700&amp;family=Merriweather:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'middle-earth': {
+                            green: '#2c5f2d',
+                            brown: '#97724f',
+                            gold: '#c9a66b',
+                            cream: '#f4ecd8',
+                            dark: '#1c1c1c',
+                            stone: '#d7ccc8'
+                        }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'garamond': ['Garamond', 'serif'],
+                        'merriweather': ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .border-pattern {
+                background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264.888-.14 1.24.916 1.9 2.345 2.16 3.784.15-.83.23-1.667.23-2.515 0-4.61-3.716-8.364-8.292-8.364-1.622 0-3.158.476-4.457 1.291-.383-.703-1.17-1.291-2.063-1.291-1.61 0-2.918 1.303-2.918 2.918 0 .194.02.384.057.571C11.59 10.39 3.64 16.145 3.64 16.145c-1.167.623-1.748 1.936-1.582 3.286.164 1.342 1.14 2.468 2.468 2.468h16.12zM82.5 10.604c0-4.61-3.716-8.364-8.292-8.364-1.622 0-3.158.476-4.457 1.291-.383-.703-1.17-1.291-2.063-1.291-1.61 0-2.918 1.303-2.918 2.918 0 .194.02.384.057.571 7.952 3.268 15.904 8.923 15.904 8.923 1.167.623 1.748 1.936 1.582 3.286-.164 1.342-1.14 2.468-2.468 2.468h4.063c1.328 0 2.304-1.126 2.468-2.468.172-1.358-.41-2.663-1.582-3.286 0 0 7.952-5.656 15.904-8.923.037-.187.057-.377.057-.571zM40.93 11.634c0-4.61-3.716-8.364-8.292-8.364-1.622 0-3.158.476-4.457 1.291-.383-.703-1.17-1.291-2.063-1.291-1.61 0-2.918 1.303-2.918 2.918 0 .194.02.384.057.571 7.952 3.268 15.904 8.923 15.904 8.923 1.167.623 1.748 1.936 1.582 3.286-.164 1.342-1.14 2.468-2.468 2.468h4.063c1.328 0 2.304-1.126 2.468-2.468.172-1.358-.41-2.663-1.582-3.286 0 0 7.952-5.656 15.904-8.923.037-.187.057-.377.057-.571z' fill='%2397724f' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+            }
+            .vintage-border {
+                border-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23c9a66b' fill-opacity='0.5' fill-rule='evenodd'/%3E%3C/svg%3E") 25 stretch;
+            }
+        }
+    </style>
+</head>
+<body class="bg-middle-earth-cream min-h-screen font-merriweather text-middle-earth-dark">
+    <!-- 整个小报容器 - 横向设计 -->
+    <div class="max-w-7xl mx-auto p-4 md:p-8 bg-white shadow-2xl my-6 md:my-12 border-8 vintage-border">
+        <!-- 标题区域 -->
+        <header class="relative overflow-hidden mb-6 md:mb-10 border-b-4 border-middle-earth-brown">
+            <div class="absolute inset-0 bg-middle-earth-green opacity-10"></div>
+            <div class="relative text-center p-6 md:p-10">
+                <h1 class="font-cinzel font-bold text-4xl md:text-6xl lg:text-7xl text-middle-earth-green mb-3 text-shadow">中土世界的奇幻之旅</h1>
+                <p class="font-garamond text-xl md:text-2xl lg:text-3xl text-middle-earth-brown italic">暑假阅读推荐：托尔金的《霍比特人》与《指环王》</p>
+                
+                <div class="flex justify-center mt-4 space-x-8">
+                    <i class="fa fa-book text-2xl md:text-3xl text-middle-earth-gold"></i>
+                    <i class="fa fa-moon-o text-2xl md:text-3xl text-middle-earth-gold"></i>
+                    <i class="fa fa-tree text-2xl md:text-3xl text-middle-earth-gold"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 - 横向布局 -->
+        <main class="flex flex-col md:flex-row gap-6">
+            <!-- 左侧：《霍比特人》部分 -->
+            <section class="w-full md:w-1/2 lg:w-1/3 bg-middle-earth-cream p-5 rounded-lg shadow-md border border-middle-earth-stone">
+                <h2 class="font-cinzel text-2xl md:text-3xl text-middle-earth-green text-center mb-4 border-b-2 border-middle-earth-gold pb-2">
+                    《霍比特人》
+                </h2>
+                
+                <div class="mb-4 overflow-hidden rounded-lg border-2 border-middle-earth-brown">
+                    <img src="https://p3-search.byteimg.com/obj/labis/85d38084fc72a41dbdcc3d521b15d2d8" alt="霍比特人的袋底洞与夏尔风景" class="w-full h-auto hover:scale-105 transition-transform duration-700">
+                </div>
+                
+                <h3 class="font-garamond text-xl text-middle-earth-brown mb-2 font-bold">一场意外的冒险</h3>
+                <p class="mb-3">在夏尔宁静的袋底洞里，霍比特人比尔博·巴金斯过着舒适安逸的生活，直到巫师甘道夫带着十三个矮人闯入他的家，邀请他参与一场夺回被巨龙史矛革占据的宝藏的冒险。</p>
+                
+                <p class="mb-3">这趟旅程充满了惊奇与危险：他们遇到了食人妖、精灵、咕噜、狼人和巨型蜘蛛，最终面对巨大的黄金巨龙。在旅途中，比尔博发现了一枚具有隐身魔力的戒指，这将在未来改变中土世界的命运。</p>
+                
+                <div class="mt-5 p-3 bg-middle-earth-green/10 rounded border-l-4 border-middle-earth-gold">
+                    <p class="italic font-garamond">
+                        "真正的勇气不在于永不恐惧，而在于尽管恐惧，依然前行。"
+                    </p>
+                </div>
+            </section>
+
+            <!-- 中间：《指环王》部分 -->
+            <section class="w-full md:w-1/2 lg:w-1/3 bg-middle-earth-cream p-5 rounded-lg shadow-md border border-middle-earth-stone">
+                <h2 class="font-cinzel text-2xl md:text-3xl text-middle-earth-green text-center mb-4 border-b-2 border-middle-earth-gold pb-2">
+                    《指环王》
+                </h2>
+                
+                <div class="mb-4 overflow-hidden rounded-lg border-2 border-middle-earth-brown">
+                    <img src="https://p3-search.byteimg.com/obj/labis/ea7f4da842718b387e3de018b396a811" alt="指环王中魔戒圣战场景" class="w-full h-auto hover:scale-105 transition-transform duration-700">
+                </div>
+                
+                <h3 class="font-garamond text-xl text-middle-earth-brown mb-2 font-bold">史诗般的魔戒圣战</h3>
+                <p class="mb-3">《指环王》三部曲讲述了比尔博的侄子佛罗多继承那枚神秘戒指后，发现它正是黑暗魔君索伦的至尊魔戒。为了阻止索伦重获魔戒并统治中土世界，佛罗多加入了由各种族组成的护戒同盟，踏上摧毁魔戒的艰难旅程。</p>
+                
+                <p class="mb-3">从精灵王国到矮人矿井，从洛汗国的草原到魔多的黑暗土地，护戒同盟成员们经历了无数考验，展现了勇气、牺牲与友谊的力量。这不仅是一场对抗外部邪恶的战争，也是一场对抗内心欲望的斗争。</p>
+                
+                <div class="mt-5 p-3 bg-middle-earth-green/10 rounded border-l-4 border-middle-earth-gold">
+                    <p class="italic font-garamond">
+                        "即使是最微不足道的人，也能改变未来的走向。"
+                    </p>
+                </div>
+            </section>
+
+            <!-- 右侧：阅读推荐与中土世界地图 -->
+            <section class="w-full md:w-full lg:w-1/3 bg-middle-earth-cream p-5 rounded-lg shadow-md border border-middle-earth-stone">
+                <h2 class="font-cinzel text-2xl md:text-3xl text-middle-earth-green text-center mb-4 border-b-2 border-middle-earth-gold pb-2">
+                    为什么阅读托尔金？
+                </h2>
+                
+                <div class="mb-4 overflow-hidden rounded-lg border-2 border-middle-earth-brown">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/1b538dd3cfa0475c817f18d59b05cc31~tplv-a9rns2rl98-image.image?rcl=20250830150038337930BC8E67DB81D2EC&amp;rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1757142039&amp;x-signature=dzykY9NlUjGRsGlgW34en0IlBTs%3D" alt="中土世界地图" class="w-full h-auto hover:scale-105 transition-transform duration-700">
+                </div>
+                
+                <ul class="space-y-3 mb-5">
+                    <li class="flex items-start">
+                        <i class="fa fa-star text-middle-earth-gold mt-1 mr-2"></i>
+                        <span>托尔金创造了一个细节丰富、历史悠久的完整世界，拥有自己的语言、神话和地理。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa fa-star text-middle-earth-gold mt-1 mr-2"></i>
+                        <span>作品探讨了勇气、友谊、牺牲、权力腐蚀等深刻主题，适合所有年龄段阅读。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa fa-star text-middle-earth-gold mt-1 mr-2"></i>
+                        <span>作为现代奇幻文学的奠基之作，托尔金的作品影响了无数书籍、电影和游戏。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa fa-star text-middle-earth-gold mt-1 mr-2"></i>
+                        <span>暑假是沉浸在这个宏大史诗中的完美时机，你可以跟随角色们经历难忘的冒险。</span>
+                    </li>
+                </ul>
+                
+                <div class="mt-6 p-4 bg-middle-earth-brown/10 rounded-lg border border-middle-earth-gold/30 text-center">
+                    <p class="font-cinzel font-bold text-middle-earth-brown text-lg">阅读顺序建议</p>
+                    <p class="mt-2">1. 《霍比特人》</p>
+                    <p>2. 《指环王：护戒同盟》</p>
+                    <p>3. 《指环王：双塔奇兵》</p>
+                    <p>4. 《指环王：王者归来》</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="mt-8 pt-6 border-t-4 border-middle-earth-brown text-center">
+            <div class="flex justify-center items-center space-x-4 mb-3">
+                <i class="fa fa-quill text-middle-earth-brown"></i>
+                <p class="font-garamond text-lg">暑假阅读 · 探索无限想象</p>
+                <i class="fa fa-quill text-middle-earth-brown"></i>
+            </div>
+            <p class="text-sm text-middle-earth-brown/70">
+                "所有的故事都在等待结束，但新的故事也在悄然开始..."
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // 添加页面加载动画效果
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach((section, index) => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        });
+    </script>
+
+
+
+    </body></html>

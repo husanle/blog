@@ -2,7 +2,7 @@
 permalink: /get-minecraft-for-free/
 layout: default
 ---
-## Get Minecraft For Free!!! (In Chinese)
+# Get Minecraft For Free!!! (In Chinese)
 
 今天我们来学习白嫖Minecraft。
 

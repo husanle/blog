@@ -1,5 +1,5 @@
 ---
-parmalink: /werewolf
+parmalink: /werewolf/
 layout: default
 ---
 
